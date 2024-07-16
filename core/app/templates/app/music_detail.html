@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>{{ music.title }}</h1>
+<h3>Жанр: {{ music.genre }}</h3>
+<p>{{ music.music_text }}</p>
+<audio controls>
+  <source src="{{ music.file.url }}" type="audio/ogg">
+</audio>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+
+    {% for music in musics %}
+        <h2><a href="{% url 'detail' music.id %}">{{ music.title }}</a></h2>
+        <h3>Жанр: {{ music.genre }}</h3>
+    {% endfor %}
+
+</center>
+</body>
+</html>
